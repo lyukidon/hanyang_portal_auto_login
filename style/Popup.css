@@ -1,7 +1,10 @@
 body{
-    width: 250px;
+    width: 270px;
 }
 #autoCheck{
-    width: 70%;
-    height: 30%;
+    width: 100px;
+    height: 40px;
+}
+#warning{
+    color: red;
 }

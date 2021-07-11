@@ -5,7 +5,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     //코로나 자가진단
     const corona="https://portal.hanyang.ac.kr/openPage.do?pgmId=P320980&tk=daad9bae1afb44e5c91969df5d1031b326e3fea62674ed9f101a5948cd5909f9"
     const coronaCheck = [...document.querySelectorAll('input')].filter(c => c.id.indexOf('b') !== -1 )
-    const submitCheck = document.querySelector('input#btn_confirm')
+    const submitCheck = document.querySelector('input#btn_confirm');
     function click_All_Inputs(inputs){
         inputs.map(c => c.checked = true)
         submitCheck.click()
