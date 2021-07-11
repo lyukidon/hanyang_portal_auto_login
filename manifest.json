@@ -1,6 +1,19 @@
 {
-    "name": "Hello Extensions",
-    "description": "Base Level Extension",
-    "version": "1.0",
-    "manifest_version": 3
+    "name": "Hanyang_Portal_Auto_Login",
+
+    "version": "1.0.0",
+
+    "manifest_version": 2,
+
+    "browser_action": {
+        "default_popup": "Popup.html"
+    },
+
+    "content_scripts": [
+        {
+          "run_at": "document_idle",
+          "matches": ["https://portal.hanyang.ac.kr/*"],
+          "js": ["./src/Content.js"]
+        }
+      ]
 }
