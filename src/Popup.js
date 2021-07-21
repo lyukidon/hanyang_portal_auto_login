@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function() {
         const autoCheckBtn = document.querySelector('button#autoCheck');
 
         autoCheckBtn.addEventListener("click", ()=>{
-            console.log('popup')
             chrome.tabs.sendMessage(activeTab.id, { action: "autoLogin" })
         });
     })

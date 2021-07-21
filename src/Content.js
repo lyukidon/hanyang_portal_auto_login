@@ -10,10 +10,9 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     }
     switch (request.action) {
         case "autoLogin":
-            console.log('content')
             click_All_Inputs(coronaCheck);
             break;
         default:
-            console.log('default')
+            console.log('error')
     }
 })
