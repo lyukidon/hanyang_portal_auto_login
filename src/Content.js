@@ -13,6 +13,6 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
             click_All_Inputs(coronaCheck);
             break;
         default:
-            console.log('default')
+            console.log('error')
     }
 })
